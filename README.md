@@ -3,17 +3,19 @@
 A whitelist dApp that gives early supporters access to a whitelist for a new NFT collection. The first 10 requesters get access for free.
 This app was built for the Sophomore track at [LearnWeb3DAO](https://learnweb3.io/).
 
-You can check out the deployed testnet app here: https://whitelist-dapp-dsmd7zfa7-sunkio.vercel.app/
+This version's smart contract has been deployed to the goerli testnet.
+You can check out the deployed testnet app here: 
 
 ![Whitelist dApp Screenshot](wl-frontend/public/Whitelist-Dapp-Screenshot.png)
 
+For the Sepolia testnet version, check [this repository](https://github.com/Sunkio/Whitelist-Dapp)
 ## Details
 This whitelist dApp is a simple, decentralized application that allows users to create and manage a whitelist of approved Ethereum addresses. The whitelist can be configured to allow or deny access to certain functions or contracts based on whether an address is included in the whitelist. The application can also be modified to store and share sensitive data among a trusted group of addresses.
 
 ## How to interact with the deployed testnet app
-The contract has been deployed to Ethereum Sepolia for testing purposes. You can find out more about it [here](https://sepolia.dev/).
-You need test funds to interact with the app. There are several faucets you can use to get Sepolia testnet Ether for free. Here’s one example that has worked well for me in the past:
-https://sepolia-faucet.pk910.de/
+The contract has been deployed to Ethereum Goerli for testing purposes. You can find out more about it [here](https://goerli.net/).
+You need test funds to interact with the app. There are several faucets you can use to get Goerli testnet Ether for free. Here’s one example that has worked well for me in the past:
+https://goerlifaucet.com/
 
 If you’re brand new to web3: To get  started, you first need a wallet such as [Metamask](https://metamask.io/) to receive testnet funds and start interacting with the app.
 
@@ -25,24 +27,23 @@ To install the Whitelist-Dapp, you will need to install the necessary dependenci
 ### 1.) Fork and clone this repository to your local machine
 [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo, then clone it to your local machine:
 ``` shell
-git clone https://github.com/YOUR-USERNAME/Whitelist-Dapp 
+git clone https://github.com/YOUR-USERNAME/Whitelist-Dapp_Goerli
 ```
 
 ### 2.) Blockchain Part
 Run the following commands in your CLI:
-``shell
-cd Whitelist-Dapp/hardhat-tutorial
+``` shell
+cd Whitelist-Dapp_Goerli/hardhat-tutorial
 npm init --yes
 npm install --save-dev hardhat
 npx hardhat
 npm install dotenv
 ```
-
 Create an endpoint on [QuickNode](https://www.quicknode.com/), or any other provider of your choice, and copy the HTTP-URL.
 Create a .env file and follow the structure of the [.env-example file](hardhat-tutorial/.env-example) to add your QuickNode URL and your private key. DO NOT upload this file to Git Hub! It is already included in .gitignore but better double-check. 🙂
 
 Once you’re done editing, run:
-``
+``` shell
 npx hardhat compile 
 npx hardhat run scripts/deploy.js --network sepolia
 ```
