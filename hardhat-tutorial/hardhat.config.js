@@ -7,7 +7,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 module.exports = {
   solidity: "0.8.9",
   networks: {
-    sepolia: {
+    goerli: {
       url: QUICKNODE_HTTP_URL,
       accounts: [PRIVATE_KEY],
     },

@@ -45,11 +45,11 @@ Create a .env file and follow the structure of the [.env-example file](hardhat-t
 Once you’re done editing, run:
 ``` shell
 npx hardhat compile 
-npx hardhat run scripts/deploy.js --network sepolia
+npx hardhat run scripts/deploy.js --network goerli 
 ```
 
 ### 3.) The Frontend Part
-The frontend is built with Next.js. You need to have [Node.js]() installed.
+The frontend is built with Next.js. You need to have [Node.js](https://nodejs.org/) installed.
 
 Run the following commands to set-up your project and start the development server:
 ``` shell
