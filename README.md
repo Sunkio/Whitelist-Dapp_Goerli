@@ -4,9 +4,9 @@ A whitelist dApp that gives early supporters access to a whitelist for a new NFT
 This app was built for the Sophomore track at [LearnWeb3DAO](https://learnweb3.io/).
 
 This version's smart contract has been deployed to the goerli testnet.
-You can check out the deployed testnet app here: 
+You can check out the deployed testnet app here: https://whitelist-dapp-goerli-eight.vercel.app/ 
 
-![Whitelist dApp Screenshot](wl-frontend/public/Whitelist-Dapp-Screenshot.png)
+![Whitelist dApp Screenshot](wl-frontend/public/Whitelist-Dapp-Goerli-Screenshot.png)
 
 For the Sepolia testnet version, check [this repository](https://github.com/Sunkio/Whitelist-Dapp)
 ## Details
